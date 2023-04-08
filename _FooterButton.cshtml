@@ -2,6 +2,10 @@
 @using ToSic.Sxc.Services;
 
 @{
+    var page = GetService<ToSic.Sxc.Services.IPageService>();
+    page.Activate("jQuery");
+    page.Activate("Bootstrap5");
+
     var getCookieTypes = AsList(App.Data["CookieTypes"]).OrderBy( o => o.Order );
     var getCookieItems = AsList(App.Data["CookieItems"]);
 }
@@ -323,13 +327,17 @@
         }
     }
 
-    checkConsentTypeAndStatus();
+    
 
-    function checkConsentTypeAndStatus() {
-        if(getCookie("cookieOptionSaved") == "true") {
-            hideCookieBarWithoutAnimation();
-        } else if (consentMode == "modal") {
-            $('#cookieModal').modal('show'); 
+
+    $(document).ready(function() { 
+        function checkConsentTypeAndStatus() {
+            if(getCookie("cookieOptionSaved") == "true") {
+                hideCookieBarWithoutAnimation();
+            } else if (consentMode == "modal") {
+                $('#cookieModal').modal('show'); 
+            }
         }
-    }
+        checkConsentTypeAndStatus();
+    })
 </script>
