@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="14.08.00" ExportDate="2022-09-27T10:38:59.813914+01:00">
+  <Header>
+    <App Guid="cabb2ac2-dc4a-4140-8744-a447e106b4a7" />
+    <Language Default="pt-pt" />
+    <Dimensions>
+      <Dimension DimensionID="3" Name="English (United States)" SystemKey="" ExternalKey="en-US" Active="true" />
+      <Dimension DimensionID="4" Name="Portuguese (Portugal)" SystemKey="" ExternalKey="pt-PT" Active="true" />
+    </Dimensions>
+  </Header>
+  <AttributeSets>
+    <AttributeSet StaticName="App-Resources" Name="App-Resources" Description="Stores resources like translations for an app" Scope="System.App" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="BottomCookieBarText" Type="Empty" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="d0631fe8-69b9-4ebc-bafd-fe7e04073f75" Json="True" KeyNumber="1106">
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="BottomCookieBarText" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="BarText" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="2e4ecac5-34dc-4b33-bcd2-b586548b8539" Json="True" KeyNumber="1101">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="BarText" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="AcceptAllButtonText" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="bbd879f8-3bb8-477c-93cf-504f13bf002e" Json="True" KeyNumber="1102">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="AcceptAllButtonText" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="RejectAllText" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="69d193a2-26df-4360-9227-7094acf1f074" Json="True" KeyNumber="1103">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="RejectAllText" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="ShowMoreText" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="7d5cf2ff-aa58-4d22-a28d-beaa62dd335f" Json="True" KeyNumber="1104">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="ShowMoreText" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="CookieTypesModal" Type="Empty" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="91a523c8-9d80-463b-a5e8-2af071dfb1b1" Json="True" KeyNumber="1108">
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="CookieTypesModal" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="CookieModalTitleText" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="47ff13d2-cf78-4a63-a875-63f355333e11" Json="True" KeyNumber="1115">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="CookieModalTitleText" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="CookieDescription" Type="String" IsTitle="true">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="80879f21-8c21-452c-9029-f0f7765105a1" Json="True" KeyNumber="1096">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-default" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="CookieDescription" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="2d6b24c1-bbb7-41e3-83a5-9808bc895d8b" Json="True" KeyNumber="1096">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="15473d03-b9c7-4034-a0e5-a6dd3645256c" Json="True" KeyNumber="1096">
+            <Value Key="InputFontFamily" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="4" Type="Number">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="CloseModalButtonText" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="8e0616bc-bf4b-4517-a4b3-3412f72a6523" Json="True" KeyNumber="1105">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="CloseModalButtonText" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="ThemeButton" Type="Empty" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5be15e5b-2b66-4e96-828f-4e863a8aa92a" Json="True" KeyNumber="1109">
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="ThemeButton" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="ShowModalButtonText" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="fbb5a6bd-ac55-441c-a6ac-000cc8fbdaac" Json="True" KeyNumber="1100">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="ShowModalButtonText" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="App-Settings" Name="App-Settings" Description="Stores settings for an app" Scope="System.App" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="GlobalSettings" Type="Empty" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="be4bad67-be01-48d6-8f01-1a9e6fdf64b5" Json="True" KeyNumber="1203">
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="GlobalSettings" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="DebugInfo" Type="Boolean" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="c1321580-f477-4b66-950a-6fc042dbcf45" Json="True" KeyNumber="1204">
+            <Value Key="InputType" Value="boolean-default" Type="String" />
+            <Value Key="Name" Value="DebugInfo" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="DefaultCookieLength" Type="Number" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="cbd35932-1979-4daf-bf0e-3b3dd34e822d" Json="True" KeyNumber="1205">
+            <Value Key="InputType" Value="number-default" Type="String" />
+            <Value Key="Name" Value="DefaultCookieLength" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="ConsentMode" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a20b05b9-a1c3-40ba-b9f0-9ee9bef4302b" Json="True" KeyNumber="1117">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-dropdown" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="ConsentMode" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="f2948a37-eb14-47f2-b693-4bed47f5ec3c" Json="True" KeyNumber="1117">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="731ba63b-b5e0-4e66-96d8-e25a27efd759" Json="True" KeyNumber="1117">
+            <Value Key="DropdownValues" Value="bar:Bottom Bar&#xA;modal:Modal with no bar" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="DropdownValuesFormat" Value="value-label" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="CookieTypesModalStyles" Type="Empty" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="0d199160-67ed-46d3-b12d-19ab5ea117d8" Json="True" KeyNumber="1113">
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="CookieTypesModalStyles" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="CookieIcon" Type="Hyperlink" IsTitle="true">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="00ceba00-d427-4384-be7a-b46f379cea6d" Json="True" KeyNumber="1075">
+            <Value Key="InputType" Value="hyperlink-default" Type="String" />
+            <Value Key="Name" Value="CookieIcon" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="CloseModalButtonClasses" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="0a42e147-9e59-4154-9653-cac50ce91024" Json="True" KeyNumber="1095">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="CloseModalButtonClasses" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="BottomBarSettings" Type="Empty" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="3bcc4493-b9e3-481e-aa3c-595e8778ad6e" Json="True" KeyNumber="1110">
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="BottomBarSettings" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="ShowAcceptAllButton" Type="Boolean" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="48e42371-8355-4164-a540-d8f7d06d8620" Json="True" KeyNumber="1084">
+            <Value Key="InputType" Value="boolean-default" Type="String" />
+            <Value Key="Name" Value="ShowAcceptAllButton" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="ShowRejectAllButton" Type="Boolean" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a5701752-e447-4713-aa03-6de6b6005e65" Json="True" KeyNumber="1088">
+            <Value Key="InputType" Value="boolean-default" Type="String" />
+            <Value Key="Name" Value="RejectAllButton" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="ShowMoreButton" Type="Boolean" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="ce2838dc-cbf7-4731-aaad-54e38c3a64fe" Json="True" KeyNumber="1086">
+            <Value Key="InputType" Value="boolean-default" Type="String" />
+            <Value Key="Name" Value="ShowMoreButton" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="BottomBarStyles" Type="Empty" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="6a523fcd-e137-4cd5-9cfe-b501e7ad4f70" Json="True" KeyNumber="1111">
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="BottomBarStyles" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="BarClasses" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="44b75096-1ac9-43d0-9dec-1750635b306b" Json="True" KeyNumber="1082">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="BarClasses" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="AcceptAllButtonClasses" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a8e05504-abb5-4a35-95e4-d800da3d258e" Json="True" KeyNumber="1090">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="AcceptAllButtonClasses" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="ShowMoreButtonClasses" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="3b7fa12c-fedc-460e-bb90-f5e349b624e5" Json="True" KeyNumber="1093">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="ShowMoreButtonClasses" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="RejectAllButtonClasses" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="24a87769-d273-41e3-a753-8ffae7468b13" Json="True" KeyNumber="1092">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="RejectAllButtonClasses" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="ThemeButtonStyles" Type="Empty" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="288bd176-faec-4e02-8ce9-400109879ea9" Json="True" KeyNumber="1114">
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="ThemeButtonStyles" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="ShowModalButtonClasses" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="ffdb83ef-1a87-42ec-a8fe-ec2eabac76cb" Json="True" KeyNumber="1080">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="ButtonClasses" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="7509c018-3ad8-4b64-8317-a053eff1327c" Name="CookieItems" Description="" Scope="Default" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="CookieName" Type="String" IsTitle="true">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f7a80335-c175-4571-8016-620a90c4f1a0" Json="True" KeyNumber="1077">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="CookieName" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="CookieDesc" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="38757400-120b-4a34-a73c-4614e5dc1224" Json="True" KeyNumber="1078">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="CookieDesc" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="CookieType" Type="Entity" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="fbe28528-ce8b-48da-a6a2-6ce689369190" Json="True" KeyNumber="1079">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="entity-default" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="CookieType" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Entity" AttributeSetName="@Entity" EntityGUID="a278b948-d2a6-4f4b-895e-6e1cc8aa76bb" Json="True" KeyNumber="1079">
+            <Value Key="AllowMultiValue" Value="False" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableAddExisting" Value="True" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableCreate" Value="False" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableDelete" Value="False" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableEdit" Value="False" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableRemove" Value="True" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="EntityType" Value="CookieTypes" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Prefill" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="CustomCodeToEnable" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="c940f1b2-cc34-45c0-ae70-758e5c516468" Json="True" KeyNumber="1098">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-default" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="CustomCode" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="9eb1ab1f-fc8e-463b-882f-5617d8f2a917" Json="True" KeyNumber="1098">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="c2d6f14e-517b-426b-baf6-f5fc340b3e24" Json="True" KeyNumber="1098">
+            <Value Key="InputFontFamily" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="5" Type="Number">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="CustomCodeToDisable" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="e66a018e-50ec-4307-82e2-57bf478b1970" Json="True" KeyNumber="1202">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-default" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="CustomCodeToDisable" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="9bff2dd9-e742-45ef-be2a-1e09fa1d1afb" Json="True" KeyNumber="1202">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="9e756f98-f28a-41ac-91ad-2d882b8e4559" Json="True" KeyNumber="1202">
+            <Value Key="InputFontFamily" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="RowCount" Value="5" Type="Number">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="01ec30b7-b2ab-47f2-ac28-82ae31ad7607" Name="CookieTypes" Description="" Scope="Default" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="GroupName" Type="String" IsTitle="true">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="4b6c7fc3-b249-4752-8f95-4a18458610eb" Json="True" KeyNumber="1070">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="GroupName" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="TitleName" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a9b5dec7-ca1d-4df2-a662-ff998b5b771a" Json="True" KeyNumber="1074">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="TitleName" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Icon" Type="Hyperlink" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="92c3d3ac-1092-4d0a-8dd0-a82d05b531e7" Json="True" KeyNumber="1071">
+            <Value Key="InputType" Value="hyperlink-default" Type="String" />
+            <Value Key="Name" Value="Icon" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Description" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="ef901a65-0269-484b-be4b-7b6af9a64a82" Json="True" KeyNumber="1072">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Description" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="LinkRef" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="d6e1caa5-af4c-4344-903c-c596dcf9b288" Json="True" KeyNumber="1073">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="LinkRef" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="DefaultState" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="013f1531-0646-4b6a-a70b-ebf91acd425b" Json="True" KeyNumber="1076">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-dropdown" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="DefaultState" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="eb02917c-61f4-48c6-88e8-9d5dffd53600" Json="True" KeyNumber="1076">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="b69d72f9-20f7-4141-a39d-3d779f043370" Json="True" KeyNumber="1076">
+            <Value Key="DropdownValues" Value=" :None&#xA;checked:checked&#xA;disabled:disabled&#xA;checked disabled:checked disabled" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="DropdownValuesFormat" Value="value-label" Type="String">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean">
+              <Dimension DimensionID="4" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Order" Type="Number" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="0b7b0ed6-fe26-4f52-b073-4b80414369ee" Json="True" KeyNumber="1116">
+            <Value Key="InputType" Value="number-default" Type="String" />
+            <Value Key="Name" Value="Order" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+  </AttributeSets>
+  <Entities>
+    <Entity TargetType="3" AssignmentObjectType="App" AttributeSetStaticName="2SexyContent-App" AttributeSetName="2SexyContent-App" EntityGUID="ee279f2d-f847-4b1c-9d35-df2354f93fc6" Json="True" KeyNumber="16">
+      <Value Key="AllowRazorTemplates" Value="True" Type="Boolean">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="AllowTokenTemplates" Value="False" Type="Boolean">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="Description" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="DisplayName" Value="CookieConsentForDnn" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="Folder" Value="CookieConsentForDnn" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="Hidden" Value="False" Type="Boolean">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="OriginalId" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="RequiredDnnVersion" Value="07.02.00" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="RequiredOqtaneVersion" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="RequiredVersion" Value="08.03.00" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="SupportsAjaxReload" Value="False" Type="Boolean">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="Version" Value="00.00.13" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="3" AssignmentObjectType="App" AttributeSetStaticName="App-Settings" AttributeSetName="App-Settings" EntityGUID="8468f5b8-526b-4166-a210-77fbcb9a6964" KeyNumber="16">
+      <Value Key="AcceptAllButtonClasses" Value="btn-outline-light" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="BarClasses" Value="bg-dark text-light pt-2 pb-2" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CloseModalButtonClasses" Value="btn-primary" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="ConsentMode" Value="bar" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieIcon" Value="file:210" Type="Hyperlink">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="DebugInfo" Value="True" Type="Boolean">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="DefaultCookieLength" Value="30" Type="Number">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="RejectAllButtonClasses" Value="btn-outline-light" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="ShowAcceptAllButton" Value="True" Type="Boolean">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="ShowModalButtonClasses" Value="btn-outline-light" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="ShowMoreButton" Value="True" Type="Boolean">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="ShowMoreButtonClasses" Value="btn-outline-light" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="ShowRejectAllButton" Value="True" Type="Boolean">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="3" AssignmentObjectType="App" AttributeSetStaticName="App-Resources" AttributeSetName="App-Resources" EntityGUID="9beddb2a-1c06-4fa0-b86d-36233fcce389" KeyNumber="16">
+      <Value Key="AcceptAllButtonText" Value="Aceitar todos" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="AcceptAllButtonText" Value="Accept all" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="BarText" Value="Este site utiliza cookies para o seu funcionamento." Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="BarText" Value="This website uses cookies to function properly." Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="CloseModalButtonText" Value="Guardar opções" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CloseModalButtonText" Value="Save options" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieDescription" Value="Os cookies são pequenas informações de texto enviadas para o seu browser pelo website que está a visitar. Ajudam a que o site recorde informação sobre a sua visita, que pode tornar a sua experiência mais agradável e tornar o site mais útil." Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieDescription" Value="Cookies are small pieces of text sent to your browser by a website you visit. They help that website remember information about your visit, which can both make it easier to visit the site again and make the site more useful to you." Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieModalTitleText" Value="Definições dos cookies" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieModalTitleText" Value="Cookie settings" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="RejectAllText" Value="Rejeitar todos" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="RejectAllText" Value="Reject all" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="ShowModalButtonText" Value="Definições dos cookies" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="ShowModalButtonText" Value="Cookie settings" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="ShowMoreText" Value="Ver opções" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="ShowMoreText" Value="See option" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-Template" AttributeSetName="2SexyContent-Template" EntityGUID="ac4accc7-4600-4110-a7cd-d37e3a444140" Json="True">
+      <Value Key="ContentTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="Icon" Value="" Type="Hyperlink">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="Identifier" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="IsHidden" Value="False" Type="Boolean">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="ListContentTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="ListPresentationTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="Location" Value="Site" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="Name" Value="FooterButton" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="Path" Value="_FooterButton.cshtml" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="PresentationTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="PublishData" Value="False" Type="Boolean">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="SearchIndexingDisabled" Value="False" Type="Boolean">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="SearchIndexingStreams" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="StreamsToPublish" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="Type" Value="C# Razor" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="UseForList" Value="False" Type="Boolean">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="ViewController" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="ViewNameInUrl" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="01ec30b7-b2ab-47f2-ac28-82ae31ad7607" AttributeSetName="CookieTypes" EntityGUID="c15e920b-f317-4f3a-8147-1ae2f9d051a6">
+      <Value Key="DefaultState" Value="checked disabled" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="Description" Value="These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information." Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="Description" Value="These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information." Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="GroupName" Value="Necessários" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="GroupName" Value="Neccessary" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="Icon" Value="file:206" Type="Hyperlink">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="LinkRef" Value="necessary" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="Order" Value="1" Type="Number">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="TitleName" Value="Cookies estritamente necessários" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="TitleName" Value="Strictly neccessary cookies" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="01ec30b7-b2ab-47f2-ac28-82ae31ad7607" AttributeSetName="CookieTypes" EntityGUID="efc12613-3a80-4f86-a996-23e7d05d4ee9">
+      <Value Key="DefaultState" Value="checked" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="Description" Value="These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance." Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="Description" Value="These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance." Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="GroupName" Value="Desempenho" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="GroupName" Value="Peformance" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="Icon" Value="file:207" Type="Hyperlink">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="LinkRef" Value="performance" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="Order" Value="3" Type="Number">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="TitleName" Value="Cookies de desempenho" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="TitleName" Value="Peformance cookies" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="01ec30b7-b2ab-47f2-ac28-82ae31ad7607" AttributeSetName="CookieTypes" EntityGUID="ae3d7cc7-263b-4032-a5f8-f40bf15f7df4">
+      <Value Key="DefaultState" Value="checked" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="Description" Value="These cookies enable the website to provide enhanced functionality and personalization. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly." Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="Description" Value="These cookies enable the website to provide enhanced functionality and personalization. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly." Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="GroupName" Value="Funcionais" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="GroupName" Value="Functional" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="Icon" Value="file:208" Type="Hyperlink">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="LinkRef" Value="functional" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="Order" Value="2" Type="Number">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="TitleName" Value="Cookies funcionais" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="TitleName" Value="Functional cookies" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="01ec30b7-b2ab-47f2-ac28-82ae31ad7607" AttributeSetName="CookieTypes" EntityGUID="a10afdb2-f7ed-449c-9008-b9e885bf986a">
+      <Value Key="DefaultState" Value="checked" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="Description" Value="These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising." Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="Description" Value="These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising." Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="GroupName" Value="Publicitários" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="GroupName" Value="Targeting" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="Icon" Value="file:209" Type="Hyperlink">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="LinkRef" Value="targeting" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="Order" Value="4" Type="Number">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="TitleName" Value="Cookies publicitários" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="TitleName" Value="Targeting cookies" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="7509c018-3ad8-4b64-8317-a053eff1327c" AttributeSetName="CookieItems" EntityGUID="d126ebd5-619e-4b4e-8990-f46bb2fb5e9c">
+      <Value Key="CookieDesc" Value="A cookie is created called &quot;language&quot; to store the current language - in a monolingual install this is simply the browser default language, but if the site supports multiple languages then this may be different based on the language selected by clicking in the languages skin object." Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieName" Value="language" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieType" Value="c15e920b-f317-4f3a-8147-1ae2f9d051a6" Type="Entity" />
+      <Value Key="CustomCodeToEnable" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="7509c018-3ad8-4b64-8317-a053eff1327c" AttributeSetName="CookieItems" EntityGUID="41cc14c5-4a4e-4982-9b4a-2b3619420f97">
+      <Value Key="CookieDesc" Value="A cookie with the name &quot;.ASPXANONYMOUS&quot; is also created by asp.net anonymous authentication. This can be disabled by setting enabled=false in the anonymousIdentification node in web.config." Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieName" Value=".ASPXANONYMOUS" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieType" Value="c15e920b-f317-4f3a-8147-1ae2f9d051a6" Type="Entity" />
+      <Value Key="CustomCodeToEnable" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="7509c018-3ad8-4b64-8317-a053eff1327c" AttributeSetName="CookieItems" EntityGUID="54a33bca-14d4-41ce-9327-1f1ff3c41da9">
+      <Value Key="CookieDesc" Value="The DNNPersonalization cookie is used to store personalization data (such as tab expansion) for anonyous users. Authenticated users personalization data is stored in their profile." Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieName" Value="DNNPersonalization" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieType" Value="ae3d7cc7-263b-4032-a5f8-f40bf15f7df4" Type="Entity" />
+      <Value Key="CustomCodeToEnable" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="7509c018-3ad8-4b64-8317-a053eff1327c" AttributeSetName="CookieItems" EntityGUID="3fcd9fb3-2278-4cb2-b647-fa4c013a1354">
+      <Value Key="CookieDesc" Value="Anti-forgery cookie issued by web applications that are built using the ASP.NET MVC technologies. It is designed to stop the unauthorized posting of content to a website (known as Cross-Site Request Forgery). It contains no information about the user and is deleted when the browser is closed." Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieName" Value="__RequestVerificationToken &#x9;" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieType" Value="c15e920b-f317-4f3a-8147-1ae2f9d051a6" Type="Entity" />
+      <Value Key="CustomCodeToEnable" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="7509c018-3ad8-4b64-8317-a053eff1327c" AttributeSetName="CookieItems" EntityGUID="0c211d8d-1f9a-4d26-a0bb-d5a62b0d071d">
+      <Value Key="CookieDesc" Value="Used for forms authentication. Created when a user logs in." Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieName" Value="authentication" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieType" Value="ae3d7cc7-263b-4032-a5f8-f40bf15f7df4" Type="Entity" />
+      <Value Key="CustomCodeToEnable" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="7509c018-3ad8-4b64-8317-a053eff1327c" AttributeSetName="CookieItems" EntityGUID="a499ed9a-7471-43e3-937a-874b954bd3dc">
+      <Value Key="CookieDesc" Value="Used to determine whether the visitor is using a Mobile Device." Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieName" Value="dnn_IsMobile&#x9;" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieType" Value="ae3d7cc7-263b-4032-a5f8-f40bf15f7df4" Type="Entity" />
+      <Value Key="CustomCodeToEnable" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="7509c018-3ad8-4b64-8317-a053eff1327c" AttributeSetName="CookieItems" EntityGUID="ef14920d-441e-492e-8778-771fda841e22">
+      <Value Key="CookieDesc" Value="Stores the TabID of the last visited page." Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieName" Value="LastPageId" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieType" Value="ae3d7cc7-263b-4032-a5f8-f40bf15f7df4" Type="Entity" />
+      <Value Key="CustomCodeToEnable" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="7509c018-3ad8-4b64-8317-a053eff1327c" AttributeSetName="CookieItems" EntityGUID="5f84ec75-ed30-48f2-a03e-eab4a9397ae3">
+      <Value Key="CookieDesc" Value="Issued by DNN, necessary for site functionality, including forms authentication, created when a user logs in." Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieName" Value=".DOTNETNUKE&#x9;" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieType" Value="c15e920b-f317-4f3a-8147-1ae2f9d051a6" Type="Entity" />
+      <Value Key="CustomCodeToEnable" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="7509c018-3ad8-4b64-8317-a053eff1327c" AttributeSetName="CookieItems" EntityGUID="96c9dabc-5094-4d3e-914f-89963e254e67">
+      <Value Key="CookieDesc" Value="This cookie is set for forms authentication" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieName" Value="DotNetNukeAnonymous" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieType" Value="ae3d7cc7-263b-4032-a5f8-f40bf15f7df4" Type="Entity" />
+      <Value Key="CustomCodeToEnable" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="7509c018-3ad8-4b64-8317-a053eff1327c" AttributeSetName="CookieItems" EntityGUID="b3233a0a-2dab-4f30-9a11-75b4556833b7">
+      <Value Key="CookieDesc" Value="abc" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieName" Value="GoogleAnalytics(this and that)" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieType" Value="efc12613-3a80-4f86-a996-23e7d05d4ee9" Type="Entity" />
+      <Value Key="CustomCodeToDisable" Value="console.log(&quot;GoogleAnalytics custom code to disable is running&quot;);" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CustomCodeToEnable" Value="console.log(&quot;GoogleAnalytics custom code to enable is running&quot;);" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="7509c018-3ad8-4b64-8317-a053eff1327c" AttributeSetName="CookieItems" EntityGUID="0b860d06-4493-44d5-a26b-cc8057fd44a5">
+      <Value Key="CookieDesc" Value="asd" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieName" Value="GoogleTagManager(this and that)" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieType" Value="efc12613-3a80-4f86-a996-23e7d05d4ee9" Type="Entity" />
+      <Value Key="CustomCodeToEnable" Value="console.log(&quot;GoogleTagManagercode is running&quot;);" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+    </Entity>
+  </Entities>
+  <PortalFiles>
+    <File Id="210" RelativePath="adam\CookieConsentForDnn\uPVohGtSZkGiEHf7y5ppZA\CookieIcon\cookies-svgrepo-com.svg" />
+    <File Id="206" RelativePath="adam\CookieConsentForDnn\C5JewRfzOk-BRxri-dBRpg\Icon\chat-text.svg" />
+    <File Id="207" RelativePath="adam\CookieConsentForDnn\EybB74A6hk-pliPn0F1O6Q\Icon\speedometer2.svg" />
+    <File Id="208" RelativePath="adam\CookieConsentForDnn\x3w9rjsmMkCl-PQL8V999A\Icon\wifi.svg" />
+    <File Id="209" RelativePath="adam\CookieConsentForDnn\sv0Koe33nESQCLnohb-Yag\Icon\person.svg" />
+  </PortalFiles>
+  <PortalFolders>
+    <Folder Id="250" RelativePath="adam/CookieConsentForDnn/uPVohGtSZkGiEHf7y5ppZA/CookieIcon/" />
+    <Folder Id="242" RelativePath="adam/CookieConsentForDnn/C5JewRfzOk-BRxri-dBRpg/Icon/" />
+    <Folder Id="244" RelativePath="adam/CookieConsentForDnn/EybB74A6hk-pliPn0F1O6Q/Icon/" />
+    <Folder Id="246" RelativePath="adam/CookieConsentForDnn/x3w9rjsmMkCl-PQL8V999A/Icon/" />
+    <Folder Id="248" RelativePath="adam/CookieConsentForDnn/sv0Koe33nESQCLnohb-Yag/Icon/" />
+    <Folder Id="240" RelativePath="adam/CookieConsentForDnn/" />
+    <Folder Id="241" RelativePath="adam/CookieConsentForDnn/C5JewRfzOk-BRxri-dBRpg/" />
+    <Folder Id="243" RelativePath="adam/CookieConsentForDnn/EybB74A6hk-pliPn0F1O6Q/" />
+    <Folder Id="247" RelativePath="adam/CookieConsentForDnn/sv0Koe33nESQCLnohb-Yag/" />
+    <Folder Id="249" RelativePath="adam/CookieConsentForDnn/uPVohGtSZkGiEHf7y5ppZA/" />
+    <Folder Id="245" RelativePath="adam/CookieConsentForDnn/x3w9rjsmMkCl-PQL8V999A/" />
+  </PortalFolders>
+</SexyContent>
