@@ -1,0 +1,343 @@
+@inherits Custom.Dnn.Razor12
+@using ToSic.Sxc.Services;
+
+@{
+    var page = GetService<ToSic.Sxc.Services.IPageService>();
+    page.Activate("jQuery");
+    page.Activate("Bootstrap5");
+
+    var getCookieTypes = AsList(App.Data["CookieTypes"]).OrderBy( o => o.Order );
+    var getCookieItems = AsList(App.Data["CookieItems"]);
+}
+
+<style>
+    .pointer{ 
+        cursor: pointer;
+    }
+</style>
+
+<div @Edit.TagToolbar(Content)>
+    <button type="button" class="btn @App.Settings.ShowModalButtonClasses" data-bs-toggle="modal" 
+            data-bs-target="#cookieModal">
+        @App.Resources.ShowModalButtonText
+    </button>
+
+    <div class="modal fade" id="cookieModal" tabindex="-1" aria-labelledby="cookieModalLabel" aria-hidden="true"
+         data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cookieModalLabel">@App.Resources.CookieModalTitleText</h5>
+                </div>
+                <div class="container-fluid text-black">
+                    <div class="row flex-nowrap">
+                        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0">
+                            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 min-vh-30">
+                                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                                    <li class="nav-item">
+                                        <a onclick="showCookieType('Cookies')" 
+                                            class="nav-link align-middle d-flex px-0 pointer">
+                                            <img src = "@App.Settings.CookieIcon" alt="Cookies" 
+                                                class="" width="16" height="16"/>
+                                            <span class="ms-1 d-none d-sm-inline">Cookies</span>
+                                        </a>
+                                    </li>
+                                    @foreach(var ct in getCookieTypes) {
+                                        <li class="nav-item">
+                                            <a onclick="showCookieType('@ct.LinkRef')" 
+                                                class="nav-link align-middle d-flex px-0 pointer">
+                                                <img src = "@ct.Icon" alt="@ct.GroupName" class=""/ 
+                                                     width="16" height="16">
+                                                <span class="ms-1 d-none d-sm-inline">@ct.GroupName</span>
+                                            </a>
+                                        </li>
+                                    }
+                                </ul>
+                                <hr>
+                            </div>
+                        </div>
+                        <div id="mCookies" class="cookieDesc col py-3">
+                            <h3>Cookies</h3>
+                            <p class="lead">
+                                @App.Resources.CookieDescription
+                            </p>
+                        </div>
+                        @foreach(var ct in getCookieTypes) {
+                            <div id="@("m" + ct.LinkRef)" class="cookieDesc col py-3">
+                                <h3>@ct.GroupName</h3>
+                                <div class="form-check form-switch">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">
+                                        Ativar @ct.TitleName.ToLower()
+                                    </label>
+                                    <input class="form-check-input cookieOption" type="checkbox"
+                                            data-cookietype="@ct.LinkRef"
+                                            id="@(ct.LinkRef + "Switch")" 
+                                            onclick="setCookieTypeChoice(this, '@ct.LinkRef');"
+                                            @ct.DefaultState>
+                                </div>
+                                <p class="lead">
+                                    @ct.Description
+                                </p>
+                                <p class="lead">
+                                    @foreach(var ci in getCookieItems.Where( a => a.CookieType == ct)) {
+                                        <div class="container">
+                                            <div class="row border">
+                                                <div class="col-6">
+                                                    @ci.CookieName
+                                                </div>
+                                                <div class="col-6">
+                                                    @ci.CookieDesc
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </p>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn @App.Settings.CloseModalButtonClasses" 
+                            data-bs-dismiss="modal" onclick="saveCookieSetting();">
+                        @App.Resources.CloseModalButtonText
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @if(App.Settings.ConsentMode == "bar") {
+    <div class="position-fixed bottom-0 start-0 end-0 @App.Settings.BarClasses" 
+         id="cookieConsentBar" align="center">
+        <div class="d-none d-lg-block">
+            <span class="">@App.Resources.BarText</span>
+            @if(App.Settings.ShowAcceptAllButton) {
+                <button type="button" class="btn @App.Settings.AcceptAllButtonClasses"
+                        onclick="acceptAllCookies();">
+                    @App.Resources.AcceptAllButtonText
+                </button>
+            }
+            @if(App.Settings.ShowRejectAllButton) {
+                <button type="button" class="btn @App.Settings.RejectAllButtonClasses"
+                        onclick="rejectAllCookies();">
+                    @App.Resources.RejectAllText
+                </button>
+            }
+            @if(App.Settings.ShowMoreButton) {
+                <button type="button" class="btn @App.Settings.ShowMoreButtonClasses" data-bs-toggle="modal" 
+                        data-bs-target="#cookieModal">
+                    @App.Resources.ShowMoreText
+                </button>
+            }
+        </div>
+        <div class="d-lg-none">
+            <span class="">@App.Resources.BarText</span>
+            <br>
+            @if(App.Settings.ShowAcceptAllButton) {
+                <button type="button" class="btn @App.Settings.AcceptAllButtonClasses"
+                        onclick="acceptAllCookies();">
+                    @App.Resources.AcceptAllButtonText
+                </button>
+            }
+            @if(App.Settings.ShowRejectAllButton) {
+                <button type="button" class="btn @App.Settings.RejectAllButtonClasses"
+                        onclick="rejectAllCookies();">
+                    @App.Resources.RejectAllText
+                </button>
+            }
+            @if(App.Settings.ShowMoreButton) {
+                <button type="button" class="btn @App.Settings.ShowMoreButtonClasses" data-bs-toggle="modal" 
+                        data-bs-target="#cookieModal">
+                    @App.Resources.ShowMoreText
+                </button>
+            }
+        </div>
+    </div>
+    }
+
+
+</div>
+
+<script>
+    var consentMode = "@App.Settings.ConsentMode";
+    @if(App.Settings.DebugInfo) { 
+        @: console.log("@App.Settings.ConsentMode");
+    }
+
+    $(".cookieDesc").hide();
+    $("#mCookies").show();
+
+    var cookiesByType = {};
+
+    @foreach(var ct in getCookieTypes) {
+        @: cookiesByType.@(ct.LinkRef) = [];
+        foreach(var ci in getCookieItems.Where( t => t.CookieType == ct)) {
+            @: cookiesByType.@(ct.LinkRef).push('@ci.CookieName');
+        }
+    }
+
+    function showCookieType(cookieType) {
+        $(".cookieDesc").hide();
+        $("#m" + cookieType).show();
+    }
+
+    function saveCookieSetting() {
+        @if(App.Settings.DebugInfo) {
+            @: console.log("Saved settings in saveCookieSetting");
+        }
+        hideCookieBarWithoutAnimation();
+        setCookie("cookieOptionSaved","true");
+
+        $( '.cookieOption' ).each(function( i ) {
+            var cookieTypeName = $(this).data("cookietype");
+            var cookieTypeValue = this.checked;
+            setCookieTypeChoice(this, cookieTypeName);
+            if(this.checked) {
+                enableCookiesForType(cookieTypeName);
+            } else {
+                disableCookiesForType(cookieTypeName);
+            }
+        });
+    }
+
+    function acceptAllCookies() {
+        @if(App.Settings.DebugInfo) { 
+            @: console.log("Accepted all cookies");
+        }
+        hideCookieBar();
+        setCookie("cookieOptionSaved","true");
+        @foreach(var ct in getCookieTypes) {
+            @: enableCookiesForType("@ct.LinkRef");
+        }
+    }
+
+    function rejectAllCookies() {
+        @if(App.Settings.DebugInfo) {
+            @: console.log("Rejected all cookies");
+        }
+        hideCookieBar();
+        setCookie("cookieOptionSaved","true"); 
+        @foreach(var ct in getCookieTypes) {
+            @: disableCookiesForType("@ct.LinkRef");
+        }
+    }
+
+    function hideCookieBar() {
+        $("#cookieConsentBar").slideToggle();
+    }
+    function hideCookieBarWithoutAnimation() {
+        $("#cookieConsentBar").hide();
+    }
+
+    function setCookieTypeChoice(data, cookieType) {
+        @if(App.Settings.DebugInfo) {
+            @: console.log("setCookieTypeChoice - cookieType: " + cookieType + " data.checked: " + data.checked);
+        }
+        setCookie(cookieType + "_cookies",data.checked.toString(),100);
+    }
+
+    @foreach(var ct in getCookieTypes) {
+        @: if(getCookie("@(ct.LinkRef + "_cookies")") == "true") {
+            if(App.Settings.DebugInfo) {
+                @: console.log("@(ct.LinkRef + "_cookies")" + " loaded as true");
+            }
+        @:     document.getElementById("@(ct.LinkRef + "Switch")").checked = true;
+        @: } else if(getCookie("@(ct.LinkRef + "_cookies")") == "false"){
+            if(App.Settings.DebugInfo) { 
+                @: console.log("@(ct.LinkRef + "_cookies")" + " loaded as false");
+            }
+        @:     document.getElementById("@(ct.LinkRef + "Switch")").checked = false;
+        @: } else {
+            if(App.Settings.DebugInfo) {
+                @: console.log("@(ct.LinkRef + "_cookies")" + " not loaded");
+            }
+        @: }
+    }
+
+    function setCookie(name,value) {
+        @if(App.Settings.DebugInfo) {
+            @: console.log("setCookie", name, value);
+        }
+        var days = @App.Settings.DefaultCookieLength;
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+    }
+
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+
+    function eraseCookie(name) {   
+        @if(App.Settings.DebugInfo) {
+            @: console.log("eraseCookie", name);
+        }
+        document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    }
+
+    function enableCookiesForType(cookieType){
+        @if(App.Settings.DebugInfo) { 
+            @: console.log("enableCookiesForType", cookieType);
+        }
+        var targetType = cookiesByType[cookieType];
+        for (var i = 0; i < targetType.length; i++) { enableCodeForCookie(targetType[i]); }        
+    }
+
+    function disableCookiesForType(cookieType){
+        @if(App.Settings.DebugInfo) {
+            @: console.log("disableCookiesForType", cookieType);
+        }
+        var targetType = cookiesByType[cookieType];
+        for (var i = 0; i < targetType.length; i++) { disableCodeForCookie(targetType[i]); }  
+    }
+
+    function enableCodeForCookie(cookieName){
+        @if(App.Settings.DebugInfo) {
+            @: console.log("enableCodeForCookie", cookieName);
+        }
+        @foreach(var ci in getCookieItems.Where( a => !String.IsNullOrEmpty(a.CustomCodeToEnable))) {
+            @: if(cookieName == "@ci.CookieName") {
+            @:     @Html.Raw(ci.CustomCodeToEnable)
+            @: }
+        }
+    }
+
+    function disableCodeForCookie(cookieName){
+        @if(App.Settings.DebugInfo) {
+            @: console.log("disableCodeForCookie", cookieName);
+        }
+        @foreach(var ci in getCookieItems.Where( a => !String.IsNullOrEmpty(a.CustomCodeToDisable))) {
+            @: if(cookieName == "@ci.CookieName") {
+            @:     @Html.Raw(ci.CustomCodeToDisable)
+            @: }
+        }
+        if (getCookie(name) != null) {
+            eraseCookie(name);
+        }
+    }
+
+    
+
+
+    $(document).ready(function() { 
+        function checkConsentTypeAndStatus() {
+            if(getCookie("cookieOptionSaved") == "true") {
+                hideCookieBarWithoutAnimation();
+            } else if (consentMode == "modal") {
+                $('#cookieModal').modal('show'); 
+            }
+        }
+        checkConsentTypeAndStatus();
+    })
+</script>
